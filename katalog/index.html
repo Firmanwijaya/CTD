@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KATALOG CTD</title>
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="img/iconCTD.png" />
+
+    <!--swiper js-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+
+    <!-- header section starts -->
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="https://www.centrumtekhnikdiesel.com" class="logo"
+        ><span>C</span>entrum Teknik Diesel</a
+      >
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#book">Order</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Best Seller</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div> -->
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here..." />
+        <label for="search-bar" class="search-bar-container"></label>
+      </form>
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form container -->
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form action="">
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="Enter Your Email" />
+        <input type="password" class="box" placeholder="Enter Your Password" />
+        <input type="submit" value="login now" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+      </form>
+    </div>
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>KATALOG CENTRUM TEKHNIK DIESEL</h3>
+        <p>GENERAL DIESEL, TRACTOR, ENGINE PARTS & TECHNICAL SUPPLY</p>
+        <a href="#" class="btn">Discover More</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="img/vid1.mp4"></span>
+        <span class="vid-btn" data-src="img/vid2.mp4"></span>
+        <span class="vid-btn" data-src="img/vid3.mp4"></span>
+        <span class="vid-btn" data-src="img/vid4.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="img/vid1.mp4"
+          id="video-slider"
+          autoplay
+          muted
+          onended="playNextVideo()"
+        ></video>
+      </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- book section starts -->
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>O</span>
+        <span>R</span>
+        <span>D</span>
+        <span>E</span>
+        <span>R</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>O</span>
+        <span>W</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="img/success-buy.png" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <h3>Via email</h3>
+            <h2>centrumtekhnikdiesel88@gmail.com</h2>
+          </div>
+          <div class="inputBox">
+            <h3>Via Whatsapp</h3>
+            <h2>+62 812-8232-6022</h2>
+          </div>
+          <!-- <div class="inputBox">
+            <h3>Arrivals</h3>
+            <input type="date" />
+          </div>
+          <div class="inputBox">
+            <h3>Leaving</h3>
+            <input type="text" placeholder="Number Of Guest" />
+          </div> -->
+          <a
+            class="btn"
+            href="https://api.whatsapp.com/send?phone=6281282326022"
+            >Whatsapp</a
+          >
+        </form>
+      </div>
+    </section>
+    <!-- book section ends -->
+
+    <!-- packages section starts -->
+    <section class="packages" id="packages">
+      <h1 class="heading">
+        <span>P</span>
+        <span>A</span>
+        <span>C</span>
+        <span>K</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+        <span>S</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="img/tabung.png" alt="" />
+          <div class="content">
+            <h3><i class="fa-solid fa-cart-shopping"></i>Fuel Filter</h3>
+            <p>Mitsubishi ME121646M</p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-full"></i>
+            </div>
+            <div class="price">4.9<span>/5</span></div>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/bearing.png" alt="" />
+          <div class="content">
+            <h3><i class="fa-solid fa-cart-shopping"></i>Bearing M/T</h3>
+            <p>Mitsubishi MD716917</p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-full"></i>
+            </div>
+            <div class="price">4.8<span>/5</span></div>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/bearing1.png" alt="" />
+          <div class="content">
+            <h3><i class="fa-solid fa-cart-shopping"></i>Bearing Clutch</h3>
+            <p>ME609370B</p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-full"></i>
+            </div>
+            <div class="price">4.9<span>/5</span></div>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/bearing2.png" alt="" />
+          <div class="content">
+            <h3><i class="fa-solid fa-cart-shopping"></i>Bearing M/T</h3>
+            <p>Mitsubishi ME502938</p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-full"></i>
+            </div>
+            <div class="price">4.7<span>/5</span></div>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="img/knalpot.png" alt="" />
+          <div class="content">
+            <h3><i class="fa-solid fa-cart-shopping"></i>Exhaust Pipe</h3>
+            <p>Isuzu</p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-full"></i>
+            </div>
+            <div class="price">4.9<span>/5</span></div>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/filtercaterpillar.png" alt="" />
+          <div class="content">
+            <h3><i class="fa-solid fa-cart-shopping"></i>Filter Caterpillar</h3>
+            <p>CAT Type 156 - 1200</p>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-full"></i>
+            </div>
+            <div class="price">4.9<span>/5</span></div>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- packages section ends -->
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+      <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>v</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+        <span>S</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>pengiriman tepat waktu</h3>
+          <p>Pengiriman cepat dan tepat waktu</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Jangkauan</h3>
+          <p>Kami melakukan Pengiriman ke seluruh Indonesia</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-user-circle"></i>
+          <h3>Costumer Service</h3>
+          <p>Selalu siap melayani kapanpun anda menghubungi kami</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-handshake"></i>
+          <h3>transaksi</h3>
+          <p>Lakukan pembelian dengan mudah dan cepat di toko kami</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-comments"></i>
+          <h3>konseling</h3>
+          <p>hubungi kami saat anda memiliki keluhan dengan barang kami</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-smile"></i>
+          <h3>Satisfaction</h3>
+          <p>Memprioritaskan kepuasan pelanggan kami</p>
+        </div>
+      </div>
+    </section>
+    <!-- services section ends -->
+
+    <!-- gallery section starts -->
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
+        <span>T</span>
+        <span>E</span>
+        <span>R</span>
+        <span>L</span>
+        <span>A</span>
+        <span>R</span>
+        <span>I</span>
+        <span>S</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="img/filtercaterpillar.png" alt="" />
+          <div class="content">
+            <h3>Filter Caterpillar</h3>
+            <p>CAT Type 156 - 1200</p>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/bearing.png" alt="" />
+          <div class="content">
+            <h3>Bearing M/T</h3>
+            <p>Mitsubishi MD716917</p>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/bearing1.png" alt="" />
+          <div class="content">
+            <h3>Bearing Clutch</h3>
+            <p>ME609370B</p>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/bearing2.png" alt="" />
+          <div class="content">
+            <h3>Bearing M/T</h3>
+            <p>Mitsubishi ME502938</p>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/tabung.png" alt="" />
+          <div class="content">
+            <h3>Fuel Filter</h3>
+            <p>Mitsubishi ME121646M</p>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/knalpot.png" alt="" />
+          <div class="content">
+            <h3>Exhaust Pipe</h3>
+            <p>Isuzu</p>
+            <a href="#book" class="btn">ORDER</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- gallery section ends -->
+
+    <!-- review section starts -->
+    <section class="review" id="review">
+      <h1 class="heading">
+        <span>R</span>
+        <span>E</span>
+        <span>V</span>
+        <span>I</span>
+        <span>E</span>
+        <span>W</span>
+      </h1>
+
+      <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="img/kamelbensalah.png" alt="" />
+              <h3>Kamel Ben Salah</h3>
+              <p>
+                Ada harga, ada kualitas, biarkan bintang yang berbicara, toko
+                terpercaya untuk penyedia sparepart berkualitas
+              </p>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="img/melindabell.png" alt="" />
+              <h3>Melinda Bell</h3>
+              <p>
+                Tidak pernah menyesal sama sekali untuk menjalin hubungan bisnis
+                dengan toko ini, saya merekomendasikannya
+              </p>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="img/Stephen Begley.png" alt="" />
+              <h3>Stephen Begley</h3>
+              <p>
+                Tidak usah diragukan lagi akan keaslian barang pada ditoko ini
+              </p>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="img/RichardJCharney.png" alt="" />
+              <h3>Richard J Charney</h3>
+              <p>
+                Selama berbisnis, hanya pada toko inilah saya menaruh
+                kepercayaan yang besar
+              </p>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="img/contactus.png" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <h3>Address</h3>
+            <h2>
+              Jl. Kebon Jeruk II No.50D, Maphar - Tamansari<br />
+              Jakarta Barat - Indonesia
+            </h2>
+            <br />
+            <h2>
+              <a href="https://goo.gl/maps/uusCY9BYWaNZu9i79" target="_blank"
+                ><i class="fas fa-map-marker-alt"></i> Google Maps</a
+              >
+            </h2>
+          </div>
+          <div class="inputBox">
+            <h3>email</h3>
+            <h2>centrumtekhnikdiesel88@gmail.com</h2>
+          </div>
+          <div class="inputBox">
+            <h3>Phone</h3>
+            <h2>(012) 62310772</h2>
+          </div>
+          <div class="inputBox">
+            <h3>Whatsapp</h3>
+            <h2>(+62) 8128 2326 022</h2>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- brand section starts -->
+    <section class="brand-container">
+      <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/caterpillar.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/cummins.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/kobelco.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/komatsu.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/toyota.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/hino.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/nissan.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- brand section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>About us</h3>
+          <p>CENTRUM TEKHNIK DIESEL</p>
+          <p>General Diesel, Tractor, Engine Parts & Technical Supply</p>
+        </div>
+        <!-- <div class="box">
+          <h3>branch location</h3>
+          <a href="#">Indonesia</a>
+          <a href="#">London</a>
+          <a href="#">Japan</a>
+        </div> -->
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#book">Order</a>
+          <a href="#packages">Packages</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Best Seller</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com/centrumtekhnikdiesel88/"
+            >Instagram</a
+          >
+          <a href="https://www.facebook.com/centrumtekhnikdiesel88/"
+            >Facebook</a
+          >
+          <a href="#">Linkedin</a>
+        </div>
+      </div>
+      <h1 class="credit">
+        &copy; Copyright 2023 |<span> CENTRUM TEKHNIK DIESEL </span>
+      </h1>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- custom js file link -->
+    <script>
+      // Function to play the next video
+      function playNextVideo() {
+        const videoSlider = document.getElementById("video-slider");
+        const videoButtons = document.querySelectorAll(".vid-btn");
+        let currentVideoIndex = 0;
+
+        // Find the index of the currently playing video
+        videoButtons.forEach((button, index) => {
+          if (
+            button.getAttribute("data-src") === videoSlider.getAttribute("src")
+          ) {
+            currentVideoIndex = index;
+            return;
+          }
+        });
+
+        // Increment the current video index
+        currentVideoIndex++;
+
+        // Check if the index exceeds the number of available videos
+        if (currentVideoIndex >= videoButtons.length) {
+          currentVideoIndex = 0; // Reset to the first video
+        }
+
+        // Get the source of the next video
+        const nextVideoSrc =
+          videoButtons[currentVideoIndex].getAttribute("data-src");
+
+        // Update the video source and play the video
+        videoSlider.src = nextVideoSrc;
+        videoSlider.play();
+
+        // Update the active class on the video buttons
+        videoButtons.forEach((button, index) => {
+          if (index === currentVideoIndex) {
+            button.classList.add("active");
+          } else {
+            button.classList.remove("active");
+          }
+        });
+      }
+    </script>
+    <script
+      src="https://kit.fontawesome.com/e19a488750.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
